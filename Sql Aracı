@@ -3,9 +3,9 @@ sqlmap, otomatik SQL Injection taramaları yaparak, bir web uygulamasının veri
 
 🛠️ SQLMap ile Neler Yapılabilir?
 		Yetkinlik										Açıklama
-🔍 Hedef URL'de SQL Injection zafiyeti var mı? --->	Otomatik test eder.
-🧠 DBMS (veritabanı türü) tespiti 			   ---> MySQL, PostgreSQL, MSSQL vb.
-📂 Veritabanlarını listeleme  				   --->	--dbs
+🔍 Hedef URL'de SQL Injection zafiyeti var mı?     ---> Otomatik test eder.
+🧠 DBMS (veritabanı türü) tespiti 	           ---> MySQL, PostgreSQL, MSSQL vb.
+📂 Veritabanlarını listeleme  		           ---> --dbs
 📁 Tablo ve kolonları listeleme		           ---> -D dvwa -T users --columns
 📤 Verileri dışa aktarma (dump)		           --->  --dump, --dump-all
 🔐 Şifre hashlerini kırma	                   ---> --passwords, --crack
@@ -15,7 +15,7 @@ sqlmap, otomatik SQL Injection taramaları yaparak, bir web uygulamasının veri
 Bölüm				Açıklama
 --url 				--->SQL Injection içeren hedef URL
 --cookie			--->DVWA'ya login olduktan sonra alınan oturum bilgisi
--D dvwa -T users 	--->	dvwa veritabanındaki users tablosunu hedef al
---dump-all		    ---> Tablodaki tüm verileri çek
---tamper=lowercase	--->  Basit WAF filtrelerini aşmak için payload’ları küçültür
+-D dvwa -T users 	        --->	dvwa veritabanındaki users tablosunu hedef al
+--dump-all		        ---> Tablodaki tüm verileri çek
+--tamper=lowercase	        --->  Basit WAF filtrelerini aşmak için payload’ları küçültür
 --batch				--->  Etkileşimli sorulara otomatik cevap verir (örneğin evet/hayır)
